@@ -1,36 +1,60 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Google Developer Group Website Workshop
 
-## Getting Started
+## Setup
 
-First, run the development server:
+On your machine, make sure you have `git`, `node`, and `npm` installed.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+For Git: https://git-scm.com/book/en/v2/Getting-Started-Installing-Git
+
+For Node/NPM: https://docs.npmjs.com/downloading-and-installing-node-js-and-npm
+ 
+Choose any IDE of your liking, I'll recommend Visual Studio Code.
+
+### Step 1 - Create app using create-next-app
+
+Choose a directory to run the following command:
+
+```npx create-next-app@latest --typescript```
+
+You will see prompts asking for configuration settings. Go ahead and choose these:
+
+![alt text](readme-images/image.png)
+
+(Note: Just use Left/Right Arrow keys and Enter to select)
+
+Feel free to name your project however
+
+After all the selections, this will create a folder with your project in it!
+
+Go ahead and now open this newly generated folder in Visual Studio Code.
+
+
+### Step 2 - Link with Git repo
+
+Create a new repository on Github. Then, copy your repo's URL under this green button: ![alt text](readme-images/image-1.png)
+
+Then, in this new folder, run these commands to link to your repository. Make sure to replace `[YOUR GIT URL]` with the link copied from earlier.
+
+```
+git init .
+
+git remote add origin [YOUR GIT URL]
+
+git add .
+git commit -m "Initial commit"
+
+git push origin main
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### Step 3 - Testing your site
+In your project folder, run 
+```
+npm run dev
+```
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+If all goes well, you should see ![alt text](readme-images/image-2.png).
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Go ahead to that localhost link and you should see your website!
 
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+### Step 4 - Deploying your site
+On that localhost, simply click the "Deploy Now" button and follow the steps there! ![alt text](readme-images/image-3.png)
